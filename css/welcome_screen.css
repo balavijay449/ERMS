@@ -1,0 +1,66 @@
+.main{
+	height: 100vh;
+	width: 100vw;
+}
+.root{
+	position: relative;
+	top: 40%;
+	transform: translateY(-60%);
+}
+.authentication{
+	width: 100%;
+	margin-top: 30px;
+}
+.user_signin, .user_signup, .admin_signup{
+	width: 33%;
+	position: relative;
+	margin: 10px;
+	padding: 15px;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1) !important;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+.user_signin{
+	margin-left: 0px;
+	border-left: 4px solid #007BFF;
+}
+.user_signup{
+	border-left: 4px solid #FFCB2F;
+}
+.admin_signup{
+	border-left: 4px solid #51B868;
+}
+.user_signin:hover, .user_signup:hover, .admin_signup:hover{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) !important;
+}
+.footer{
+	position: relative;
+	bottom: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+	.user_signin, .user_signup, .admin_signup{
+		margin: 0;
+		margin-top: 10px;
+		width: 50%;
+	}
+	.header h2{
+		font-size: 27px;
+	}
+	.root{
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+@media only screen and (max-width: 575px){
+	.user_signin, .user_signup, .admin_signup{
+		width: 80%;
+	}
+}
