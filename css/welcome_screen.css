@@ -44,6 +44,8 @@
 	text-align: center;
 }
 
+/*Responsive Design*/
+
 @media only screen and (max-width: 767px){
 	.user_signin, .user_signup, .admin_signup{
 		margin: 0;
