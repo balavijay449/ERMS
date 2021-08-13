@@ -14,13 +14,31 @@
 <body>
 	<div class="container-fluid main">
 		<div class="h2 text-center header">Employee Record Management System</div>
-		<div class="row shadow-lg sub_root">
+		<div class="row root">
 			<!-- Left side sub-root -->
 			<div class="col-6 left_sub_root"></div>
 
 			<!-- Right side sub-root -->
-			<div class="col-6 right_sub_root">
-				
+			<div class="col-6 d-flex justify-content-center right_sub_root">
+				<div class="d-flex justify-content-center align-items-center flex-column child_root">
+					<div class="h2 text-center">Welcome Back</div>
+
+					<div>
+						<input type="email" class="form-control email" name="email" placeholder="Enter Email Address">
+					</div>
+
+					<div>
+						<input type="password" class="form-control password" name="password" placeholder="Password">
+					</div>
+
+					<div>
+						<button type="submit" class="btn btn-primary submit" name="submit">Login</button>
+					</div>
+					<div>
+						<a href="#" class="btn d-block text-primary forget">Forget Password?</a>
+						<a href="#" class="btn d-block text-primary">Create an account</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
