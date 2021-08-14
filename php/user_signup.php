@@ -25,7 +25,7 @@
 
 					<div class="d-flex justify-content-between name">
 						<input type="text" class="form-control f_name" name="f_name" placeholder="First Name">
-						<input type="text" class="form-control l_name" name="email" placeholder="Last Name">
+						<input type="text" class="form-control l_name" name="l_name" placeholder="Last Name">
 					</div>
 
 					<div>
@@ -45,7 +45,7 @@
 						<button type="submit" class="btn btn-primary submit" name="submit">Login</button>
 					</div>
 					<div>
-						<a href="#" class="btn d-block text-primary login">Already have an account? Login!</a>
+						<a href="user_signin.php" class="btn d-block text-primary login">Already have an account? Login!</a>
 					</div>
 				</form>
 			</div>
@@ -53,3 +53,7 @@
 	</div>
 </body>
 </html>
+
+<?php 
+require "db_files/insert_user.php";
+?>

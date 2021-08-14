@@ -20,7 +20,7 @@
 
 			<!-- Right side sub-root -->
 			<div class="col-6 d-flex justify-content-center right_sub_root">
-				<div class="d-flex justify-content-center align-items-center flex-column child_root">
+				<form class="d-flex justify-content-center align-items-center flex-column child_root">
 					<div class="h2 text-center">Welcome Back</div>
 
 					<div>
@@ -34,11 +34,12 @@
 					<div>
 						<button type="submit" class="btn btn-primary submit" name="submit">Login</button>
 					</div>
+					
 					<div>
 						<a href="#" class="btn d-block text-primary forget">Forget Password?</a>
-						<a href="#" class="btn d-block text-primary">Create an account</a>
+						<a href="user_signup.php" class="btn d-block text-primary">Create an account</a>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
