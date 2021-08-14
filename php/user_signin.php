@@ -20,7 +20,7 @@
 
 			<!-- Right side sub-root -->
 			<div class="col-6 d-flex justify-content-center right_sub_root">
-				<form class="d-flex justify-content-center align-items-center flex-column child_root">
+				<form method="post" class="d-flex justify-content-center align-items-center flex-column child_root">
 					<div class="h2 text-center">Welcome Back</div>
 
 					<div>
@@ -45,3 +45,5 @@
 	</div>
 </body>
 </html>
+
+<?php require "db_files/login_user.php"; ?>

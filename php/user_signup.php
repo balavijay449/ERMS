@@ -42,7 +42,7 @@
 					</div>
 
 					<div>
-						<button type="submit" class="btn btn-primary submit" name="submit">Login</button>
+						<button type="submit" class="btn btn-primary submit" name="submit">Register Account</button>
 					</div>
 					<div>
 						<a href="user_signin.php" class="btn d-block text-primary login">Already have an account? Login!</a>

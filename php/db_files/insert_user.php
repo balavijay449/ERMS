@@ -22,7 +22,8 @@ if (isset($_POST['submit'])) {
 		
 		$insert_all = "INSERT INTO user_login (f_name, l_name, e_code, email, password) VALUES ('$f_name', '$l_name', '$e_code', '$email', '$n_pass')";
 		if ($db -> query($insert_all)) {
-			echo "<script>alert('success');</script>";
+			header("Location: welcome_screen.php");
+   			exit;
 		}
 		else{
 			echo "<script>alert('Email id (or) Employee code already exists');</script>";
