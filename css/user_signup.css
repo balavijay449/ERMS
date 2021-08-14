@@ -1,0 +1,72 @@
+*{
+	box-sizing: border-box;
+}
+.main{
+	height: 100vh;
+	width: 100vw;
+	background-color: #f5f5f5;
+}
+.header{
+	position: relative;
+	top: 25px;
+}
+.root{
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 450px;
+	width: 70%;
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.left_sub_root{
+	background-image: url("../images/employee.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	border-radius: 10px 0 0 10px;
+}
+.right_sub_root{
+	position: relative;
+	background-size: cover;
+	background-color: #fff;
+	border-radius: 0 10px 10px 0;
+}
+.child_root{
+	height: 100%;
+	width: 90%;
+}
+.child_root div{
+	position: relative;
+	width: 100%;
+}
+.name input{
+	width: 47%;
+}
+.f_name, .l_name{
+	margin-top: 25px !important;
+	margin-bottom: 15px !important;
+}
+.e_code{
+	margin-bottom: 15px !important;
+}
+.email{
+	margin-bottom: 15px !important;
+}
+.password input{
+	width: 47%;
+}
+.n_password, .r_password{
+	margin-bottom: 15px !important;
+}
+.submit{
+	position: relative;
+	margin-bottom: 20px !important;
+	width: 100% !important;
+}
+.login{
+	position: relative;
+	top: 10px;
+}
