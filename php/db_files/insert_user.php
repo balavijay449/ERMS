@@ -1,6 +1,6 @@
 <?php
-
 $db=new mysqli('localhost','root','','erms') or die("no connect");
+session_start();
 
 if (isset($_POST['submit'])) {
 	$f_name = $_POST['f_name'];
@@ -22,8 +22,8 @@ if (isset($_POST['submit'])) {
 		
 		$insert_all = "INSERT INTO user_login (f_name, l_name, e_code, email, password) VALUES ('$f_name', '$l_name', '$e_code', '$email', '$n_pass')";
 		if ($db -> query($insert_all)) {
-			header("Location: welcome_screen.php");
-   			exit;
+			$_SESSION["name"] = $f_name." ".$l_name;
+			echo("<script>location.href = 'user_dash.php';</script>");
 		}
 		else{
 			echo "<script>alert('Email id (or) Employee code already exists');</script>";
@@ -31,4 +31,5 @@ if (isset($_POST['submit'])) {
 
 	}
 }
+
 ?>

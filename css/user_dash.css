@@ -1,0 +1,76 @@
+.root{
+	height: 100vh;
+	width: 100vw;
+}
+
+/*left side*/
+.left_root{
+	background-color: #3899FF;
+}
+.header{
+	height: 60px;
+	border-bottom: 1px solid #6ea5fe;
+}
+.header img{
+	/*margin-right: 10px !important;*/
+	position: relative;
+	right: 10px;
+}
+.titles{
+	position: relative;
+	margin-top: 30px;
+}
+.titles div{
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.dashboard{
+	position: relative;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+.dashboard .btn:hover{
+	color: white !important;
+}
+.back_img{
+	border-radius: 50%;
+	box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*right side*/
+.right_root{
+	position: relative;
+	background-color: #f6f9ff;
+	box-shadow: inset 5px 0 5px -5px rgba(0, 0, 0, 0.5);
+}
+.top_section{
+	position: relative;
+	height: 60px;
+	border-bottom: 1px solid #f2f2f2;
+	box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+}
+.user_section{
+	position: relative;
+}
+.top_section button{
+	/*position: relative;*/
+}
+.user_box{
+	position: relative;
+	width: 100%;
+}
+.user_name{
+	position: relative;
+	height: 80px;
+	width: 40%;
+	border-left: 4px solid #3899FF;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.welcome{
+	font-size: 13px;
+	font-weight: 600;
+	color: #3899FF;
+}
+.name{
+	font-weight: 600;
+	font-size: 17px;
+}

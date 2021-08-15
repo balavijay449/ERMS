@@ -11,7 +11,7 @@
 	width: 100%;
 	margin-top: 30px;
 }
-.user_signin, .user_signup, .admin_signup{
+.user_signin, .user_signup, .admin_signin{
 	width: 33%;
 	position: relative;
 	margin: 10px;
@@ -29,10 +29,10 @@
 .user_signup{
 	border-left: 4px solid #FFCB2F;
 }
-.admin_signup{
+.admin_signin{
 	border-left: 4px solid #51B868;
 }
-.user_signin:hover, .user_signup:hover, .admin_signup:hover{
+.user_signin:hover, .user_signup:hover, .admin_signin:hover{
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) !important;
 }
 .footer{
@@ -47,7 +47,7 @@
 /*Responsive Design*/
 
 @media only screen and (max-width: 767px){
-	.user_signin, .user_signup, .admin_signup{
+	.user_signin, .user_signup, .admin_signin{
 		margin: 0;
 		margin-top: 10px;
 		width: 50%;
@@ -62,7 +62,7 @@
 	}
 }
 @media only screen and (max-width: 575px){
-	.user_signin, .user_signup, .admin_signup{
+	.user_signin, .user_signup, .admin_signin{
 		width: 80%;
 	}
 }

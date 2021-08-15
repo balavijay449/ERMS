@@ -26,8 +26,8 @@
 					<a href="user_signup.php" class="btn text-warning stretched-link">USER SIGNUP</a>
 					<img src="../images/user.png" height="20">
 				</div>
-				<div class="float-left admin_signup">
-					<a href="#" class="btn text-success stretched-link">ADMIN SIGNUP</a>
+				<div class="float-left admin_signin">
+					<a href="admin_signin.php" class="btn text-success stretched-link">ADMIN SIGNIN</a>
 					<img src="../images/user.png" height="20">
 				</div>	
 			</div>
