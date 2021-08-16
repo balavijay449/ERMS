@@ -40,21 +40,9 @@ if (!isset($_SESSION['name'])) {
 				</div>
 				<!-- interfaces -->
 				<div class="titles">
-					<div class="btn-primary pl-4 py-2 dashboard">
+					<div class="btn-primary text-center py-2 dashboard">
 						<img src="../images/user-experience.png" height="20">
-						<a href="#" class="btn text-light pl-1 stretched-link">Experience</a>
-					</div>
-					<div class="btn-primary pl-4 py-2 dashboard">
-						<img src="../images/edit-experience.png" height="20">
-						<a href="#" class="btn text-light pl-1 stretched-link">Edit Experience</a>
-					</div>
-					<div class="btn-primary pl-4 py-2 dashboard">
-						<img src="../images/education.png" height="20">
-						<a href="#" class="btn text-light pl-1 stretched-link">Education</a>
-					</div>
-					<div class="btn-primary pl-4 py-2 dashboard">
-						<img src="../images/edit-education.png" height="20">
-						<a href="#" class="btn text-light pl-1 stretched-link">Edit Education</a>
+						<a href="#" class="btn text-light pl-1 stretched-link">All Employees</a>
 					</div>
 				</div>
 				<!-- back button -->
