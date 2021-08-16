@@ -44,11 +44,14 @@
 </html>
 
 <?php
+session_start();
+
 if (isset($_POST['submit'])) {
 	$name = $_POST['name'];
 	$pass = $_POST['password'];
 	if ($name == 'balavijay' && $pass == 'bala_123') {
-		echo("<script>alert('success');</script>");
+		$_SESSION['name'] = $name;
+		echo("<script>location.href = 'admin_dash.php';</script>");
 	}
 	else{
 		echo("<script>alert('Please Enter correct Username And Password');</script>");

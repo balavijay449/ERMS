@@ -2,7 +2,7 @@
 $db=new mysqli('localhost','root','','erms') or die("no connect");
 session_start();
 if (!isset($_SESSION['name'])) {
-	header("location: user_signin.php");
+	header("location: admin_signin.php");
 }
 ?>
 <!DOCTYPE html>
