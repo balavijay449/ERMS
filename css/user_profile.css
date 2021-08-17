@@ -1,3 +1,6 @@
+body{
+	overflow-x: hidden;
+}
 .root{
 	height: 100vh;
 	width: 100vw;
@@ -94,4 +97,39 @@
 .toggle .btn:focus{
 	outline: none !important;
 	box-shadow: none !important;
+}
+
+/*adding for user profile*/
+
+.user_details{
+	width: 80%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.user_details div{
+	position: relative;
+}
+.user_details label{
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 20px;
+	position: relative;
+	left: 50px;
+}
+.user_details input{
+	width: 50%;
+	position: absolute;
+	font-size: 18px;
+	top: 25%;
+	right: 50px;
+	display: inline-block !important;
+	font-weight: 500;
+}
+.btn_submit{
+	font-size: 18px !important;
+	padding: 8px 25px !important;
 }

@@ -4,13 +4,16 @@ session_start();
 if (!isset($_SESSION['name'])) {
 	header("location: user_signin.php");
 }
+
+// including file....
+include "db_files/user_profile_data.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>ERMS</title>
-	<link rel="stylesheet" href="../css/user_dash.css">
+	<link rel="stylesheet" href="../css/user_profile.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -70,18 +73,53 @@ if (!isset($_SESSION['name'])) {
 					<h5 class="mr-1"><?php echo $_SESSION['name']; ?></h5>
 					<button type="button" class="btn mr-3 profile_btn"><img src="../images/man.png" height="40"></button>
 				</div>
+				
+				<!-- right side bottom Codes... -->
+
 				<div class="right_sub">
-					<h3 class="m-3">Employee Record Management System</h3>
-					<div class="d-flex justify-content-center mt-4 user_box">
-						<div class="d-flex justify-content-between align-items-center p-3 rounded user_name">
-							<div class="float-left">
-								<div class="welcome">Welcome back to ERMS :</div>
-								<div class="name"><?php echo $_SESSION['name']; ?></div>
-							</div>
-							<img src="../images/user.png" height="30">					
-						</div>
-					</div>
+					<h3 class="m-3">My Profile</h3>
 				</div>
+
+				<form method="post" class="user_details">
+					<div>
+						<label>First Name</label>
+						<input type="text" name="f_name" class="form-control" value="<?php echo $f_name; ?>">
+					</div>
+					<div>
+						<label>Last Name</label>
+						<input type="text" name="l_name" class="form-control" value="<?php echo $l_name; ?>">
+					</div>
+					<div>
+						<label>Employee Code</label>
+						<input type="text" name="e_code" class="form-control" value="<?php echo $e_code; ?>" disabled>
+					</div>
+					<div>
+						<label>Employee Dept</label>
+						<input type="text" name="dept" class="form-control" value="<?php echo $dept; ?>" placeholder="ex. IT">
+					</div>
+					<div>
+						<label>Employee Designation</label>
+						<input type="text" name="designation" class="form-control" value="<?php echo $designation; ?>" placeholder="ex. software developer">
+					</div>
+					<div>
+						<label>Employee Contact No.</label>
+						<input type="text" name="mobile" class="form-control" value="<?php echo $mobile; ?>" placeholder="Mobile Number">
+					</div>
+					<div>
+						<label>Email</label>
+						<input type="text" name="email" class="form-control" value="<?php echo $email; ?>" disabled>
+					</div>
+					<div>
+						<label>Employee joining date</label>
+						<input type="text" name="join_date" class="form-control" value="<?php echo $join_date; ?>" placeholder="yyyy-mm-dd">
+					</div>
+					<div class="text-center">
+						<button type="submit" name="update" class="mt-4 btn btn-primary btn_submit" disabled>Update</button>
+					</div>
+				</form>
+
+				<!-- Toggle -->
+
 				<div class="toggle">
 					<a href="user_profile.php" class="btn d-flex toggle_btn_1"><img src="../images/user.png" height="20" class="mr-2">My Profile</a>
 					<button class="btn d-flex toggle_btn_2"><img src="../images/user.png" height="20" class="mr-2">Change Password</button>
@@ -91,12 +129,7 @@ if (!isset($_SESSION['name'])) {
 		</div>
 	</div>
 	<!-- script file -->
-	<script>
-		$(document).ready(function(){
-			$(".profile_btn").click(function(){
-				$(".toggle").toggle();
-			});
-		});
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../js/user_profile.js"></script>
 </body>
 </html>

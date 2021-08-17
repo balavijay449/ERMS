@@ -15,6 +15,7 @@ if (isset($_POST['submit'])) {
 		$name_result = $db->query($name_query);
 		$row = $name_result->fetch_assoc();
 		$_SESSION['name'] = $row['f_name']." ".$row['l_name'];
+		$_SESSION['email'] = $email;
 		echo("<script>location.href = 'user_dash.php';</script>");
 	}
 	else{

@@ -23,6 +23,7 @@ if (isset($_POST['submit'])) {
 		$insert_all = "INSERT INTO user_login (f_name, l_name, e_code, email, password) VALUES ('$f_name', '$l_name', '$e_code', '$email', '$n_pass')";
 		if ($db -> query($insert_all)) {
 			$_SESSION["name"] = $f_name." ".$l_name;
+			$_SESSION["email"] = $email;
 			echo("<script>location.href = 'user_dash.php';</script>");
 		}
 		else{
