@@ -34,7 +34,7 @@ if (!isset($_SESSION['name'])) {
 				<div>
 					<div class="btn-warning text-center mt-5 py-2 dashboard">
 						<img src="../images/dashboard.png" height="20">
-						<a href="#" class="btn text-light pl-1 stretched-link">Dashboard</a>
+						<a href="user_dash.php" class="btn text-light pl-1 stretched-link">Dashboard</a>
 					</div>
 					<h6 class="text-light mt-4">INTERFACE</h6>
 				</div>

@@ -37,7 +37,7 @@ include "db_files/user_profile_data.php";
 				<div>
 					<div class="btn-warning text-center mt-5 py-2 dashboard">
 						<img src="../images/dashboard.png" height="20">
-						<a href="#" class="btn text-light pl-1 stretched-link">Dashboard</a>
+						<a href="user_dash.php" class="btn text-light pl-1 stretched-link">Dashboard</a>
 					</div>
 					<h6 class="text-light mt-4">INTERFACE</h6>
 				</div>
@@ -103,7 +103,7 @@ include "db_files/user_profile_data.php";
 					</div>
 					<div>
 						<label>Employee Contact No.</label>
-						<input type="text" name="mobile" class="form-control" value="<?php echo $mobile; ?>" placeholder="Mobile Number">
+						<input type="tel" name="mobile" pattern="[0-9]{10}" class="form-control" value="<?php echo $mobile; ?>" placeholder="Mobile Number">
 					</div>
 					<div>
 						<label>Email</label>
