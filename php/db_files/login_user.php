@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
 		$row = $name_result->fetch_assoc();
 		$_SESSION['name'] = $row['f_name']." ".$row['l_name'];
 		$_SESSION['email'] = $email;
-		echo("<script>location.href = 'user_dash.php';</script>");
+		echo("<script>location.href = 'user_profile.php';</script>");
 	}
 	else{
 		echo "<script>alert('Email or Password is incorrect');</script>";

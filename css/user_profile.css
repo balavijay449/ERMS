@@ -54,7 +54,7 @@ body{
 .user_section{
 	position: relative;
 }
-.profile_btn:focus{
+.profile_click:focus{
 	outline: none !important;
 	box-shadow: none !important;
 }

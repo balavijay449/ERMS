@@ -84,8 +84,8 @@ if (!isset($_SESSION['name'])) {
 				</div>
 				<div class="toggle">
 					<a href="user_profile.php" class="btn d-flex toggle_btn_1"><img src="../images/user.png" height="20" class="mr-2">My Profile</a>
-					<button class="btn d-flex toggle_btn_2"><img src="../images/user.png" height="20" class="mr-2">Change Password</button>
-					<button class="btn d-flex toggle_btn_3"><img src="../images/user.png" height="20" class="mr-2">Logout</button>
+					<button class="btn d-flex toggle_btn_2"><img src="../images/change_password.png" height="20" class="mr-2">Change Password</button>
+					<button class="btn d-flex toggle_btn_3"><img src="../images/logout.png" height="20" class="mr-2">Logout</button>
 				</div>
 			</div>
 		</div>

@@ -1,21 +1,7 @@
 <?php
 $db=new mysqli('localhost','root','','erms') or die("no connect");
 
-// Displaying datas.......
-
 $email = $_SESSION["email"];
-
-$select_sql = "SELECT * FROM user_login WHERE email = '$email'";
-$select_result = $db->query($select_sql);
-while ($row = $select_result->fetch_assoc()) {
-	$f_name = $row['f_name'];
-	$l_name = $row['l_name'];
-	$e_code = $row['e_code'];
-	$dept = $row['dept'];
-	$designation = $row['designation'];
-	$mobile = $row['mobile'];
-	$join_date = $row['join_date'];
-}
 
 // update the data.......
 
@@ -35,4 +21,19 @@ if (isset($_POST['update'])) {
 		echo "<script>alert('update faild! please enter valid data');</script>";
 	}
 }
+
+// Displaying datas.......
+
+$select_sql = "SELECT * FROM user_login WHERE email = '$email'";
+$select_result = $db->query($select_sql);
+while ($row = $select_result->fetch_assoc()) {
+	$f_name = $row['f_name'];
+	$l_name = $row['l_name'];
+	$e_code = $row['e_code'];
+	$dept = $row['dept'];
+	$designation = $row['designation'];
+	$mobile = $row['mobile'];
+	$join_date = $row['join_date'];
+}
+
 ?>

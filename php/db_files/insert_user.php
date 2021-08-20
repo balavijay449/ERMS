@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 		if ($db -> query($insert_all)) {
 			$_SESSION["name"] = $f_name." ".$l_name;
 			$_SESSION["email"] = $email;
-			echo("<script>location.href = 'user_dash.php';</script>");
+			echo("<script>location.href = 'user_profile.php';</script>");
 		}
 		else{
 			echo "<script>alert('Email id (or) Employee code already exists');</script>";
