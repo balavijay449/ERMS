@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
 	$name = $_POST['name'];
 	$pass = $_POST['password'];
 	if ($name == 'balavijay' && $pass == 'bala_123') {
-		$_SESSION['name'] = $name;
+		$_SESSION['admin_name'] = $name;
 		echo("<script>location.href = 'admin_dash.php';</script>");
 	}
 	else{
